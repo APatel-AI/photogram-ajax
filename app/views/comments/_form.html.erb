@@ -23,6 +23,10 @@
 
     <div class="actions">
       <%= form.submit class: "btn btn-outline-secondary btn-block" %>
+
+       <% if comment.persisted? %>
+        <button type="button" class="btn btn-outline-danger btn-block" id="cancel-edit" aria-label="Cancel Edit">Cancel</button>
+      <% end %>
     </div>
   <% end %>
 </li>
